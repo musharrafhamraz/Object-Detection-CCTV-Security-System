@@ -1,0 +1,1 @@
+this is a project of a security camera that detects pedestrians and vehicles and sends notification on to the mobile phone if any body being detected after 12am.
