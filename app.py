@@ -4,8 +4,8 @@ import firebase_admin
 from firebase_admin import credentials, storage
 
 # Initialize Firebase
-cred = credentials.Certificate("cctv-security-system-firebase-adminsdk-h91tv-8bdd8dece7.json")
-firebase_admin.initialize_app(cred, {'storageBucket': 'gs://cctv-security-system.appspot.com'})
+cred = credentials.Certificate("....path/to/your/jsonfile")
+firebase_admin.initialize_app(cred, {'storageBucket': 'your-bucket-id'})
 
 # Load pre-trained object detection model
 net = cv2.dnn.readNetFromTensorflow('frozen_inference_graph.pb', 'ssd_mobilenet_v2_coco.pbtxt')

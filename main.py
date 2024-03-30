@@ -4,9 +4,11 @@ import firebase_admin
 from firebase_admin import credentials, storage
 
 # Initialize Firebase
-cred = credentials.Certificate("cctv-security-system-firebase-adminsdk-h91tv-8bdd8dece7.json")
-firebase_admin.initialize_app(cred, {'storageBucket': 'gs://cctv-security-system.appspot.com'})
+cred = credentials.Certificate("....path/to/your/jsonfile")
+firebase_admin.initialize_app(cred, {'storageBucket': 'your-bucket-id'})
 
+# cctv-security-system-firebase-adminsdk-h91tv-8bdd8dece7.json
+# gs://cctv-security-system.appspot.com
 image = cv2.imread('pic.jpg')
 # Function to upload image to Firebase storage
 def upload_to_firebase(image):
