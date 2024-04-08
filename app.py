@@ -1,11 +1,11 @@
 import cv2
 import numpy as np
-import firebase_admin
-from firebase_admin import credentials, storage
+# import firebase_admin
+# from firebase_admin import credentials, storage
 
-# Initialize Firebase
-cred = credentials.Certificate("....path/to/your/jsonfile")
-firebase_admin.initialize_app(cred, {'storageBucket': 'your-bucket-id'})
+# # Initialize Firebase
+# cred = credentials.Certificate("....path/to/your/jsonfile")
+# firebase_admin.initialize_app(cred, {'storageBucket': 'your-bucket-id'})
 # cctv-security-system-firebase-adminsdk-h91tv-8bdd8dece7.json
 # gs://cctv-security-system.appspot.com
 
